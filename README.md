@@ -51,7 +51,7 @@
 ---
 
 Your search bar header should look something like this:
-![search bar](/assets/ig_search_bar.png)
+![search bar](/assets/ig_search_bar.png) 
 
 ---
 
