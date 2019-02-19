@@ -1,13 +1,18 @@
 import React from 'react';
-import CommentSection from '../CommentSection/CommentSection'
+import Post from '../PostContainer/Post'
+import PostMain from './PostMain';
 
 const PostContainer = props => {
 return (
-    <>
-    {props.posts.map((post, index) => 
-    <CommentSection key={index} posts={post}/>
-    )}
-    </>
+    <div>
+    {props.posts.map((post, index) => (
+        <div>
+    <Post key={index} posts={post}/>
+
+    <PostMain  posts={post}/>
+    </div>
+    ))} 
+    </div>
 )
 }
 

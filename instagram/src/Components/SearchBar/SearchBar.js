@@ -1,10 +1,19 @@
 import React from 'react';
+import './SearchBar.css';
 
-const SearchBar = () => {
+const SearchBar = props => {
     return (
         <div>
-            <i class="fab fa-instagram"></i>
-            <img src="/Users/mtrestman1/Lambda/Lambda H&CSS/React-Insta-Clone/instagram/src/iglogo.png" />
+            <header>
+            <img src='instagram/src/iglogo.png' alt="" />
+            <input type='text' placeholder='Search...' />
+            <i className='fa fa-compass' />
+            <i className='fa fa-heart' />
+            <i className='fa fa-user-circle' />
+            
+
+            </header>
+            
 
             
         </div>
