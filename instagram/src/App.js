@@ -3,26 +3,35 @@ import './App.css';
 import dummyData from './dummy-data';
 import PostContainer from './Components/PostContainer/PostContainer';
 import SearchBar from './Components/SearchBar/SearchBar';
+import PostsPage from './Components/PostContainer/PostsPage';
+import authenticate from './authentication/authenticate';
 
+
+
+const Authenticate = authenticate(PostsPage)
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
      posts: [], 
-    //  searchText: 
+     
     };
   }
 
   componentDidMount() {
     
-    this.setState({ posts: dummyData });
+    this.setState({ 
+      posts: dummyData
+      
+    });
   }
 
   render() {
     return (
       <div className="App">
-        {/* <Input /> */}
+        <Authenticate />
+        <PostsPage />
         <SearchBar />
         <PostContainer posts={this.state.posts}/>
       </div>
