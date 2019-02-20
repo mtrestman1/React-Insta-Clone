@@ -1,3 +1,10 @@
-header {
-    height: 75px;
+.searchbar {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.iglogo {
+    height: 30px;
+    width: 75px;
+    margin-top: 15px;
 }

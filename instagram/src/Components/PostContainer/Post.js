@@ -6,15 +6,16 @@ const Post = props => {
     return ( 
         <div>
             <PostMain 
-            username= {props.posts.username}
             thumbnailUrl= {props.posts.thumbnailUrl}
+            username= {props.posts.username}
+            
             />
             
             <div>
-                <img src={props.posts.imageUrl}/>
+                <img src={props.posts.imageUrl} alt='' className='main-img'/>
             </div>
 
-            <CommentSection posts={props.posts.comments}/>
+            <CommentSection posts={props.posts}/>
 
         </div>
      );

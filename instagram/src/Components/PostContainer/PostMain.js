@@ -1,11 +1,12 @@
 import React from 'react';
+import './PostContainer.css';
 
 const PostMain = props => {
     
     return ( 
-        <div>
-            <img src={props.thumbnailUrl} />
-            {props.username}
+        <div className='user'>
+            <img src={props.thumbnailUrl} alt='' className='thumbnail' />
+            <span className='username'>{props.username} </span>
         </div>
 
      );
