@@ -2,7 +2,7 @@ import React from 'react';
 import './SearchBar.css';
 import iglogo from './iglogo.png';
 
-const SearchBar = props => {
+const SearchBar = () => {
     return (
             <div className='searchbar'>
             

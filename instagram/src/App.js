@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import dummyData from './dummy-data';
-import PostContainer from './Components/PostContainer/PostContainer';
-import SearchBar from './Components/SearchBar/SearchBar';
-import PostsPage from './Components/PostContainer/PostsPage';
+
 import authenticate from './authentication/authenticate';
+import Login from './Components/Login/Login';
 
 
 
-const Authenticate = authenticate(PostsPage)
+const Authenticate = authenticate(PostsPage)(Login)
 
 class App extends Component {
   constructor() {
@@ -30,10 +28,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <Authenticate />
-        <PostsPage />
-        <SearchBar />
-        <PostContainer posts={this.state.posts}/>
+       
+        
       </div>
     );
   }

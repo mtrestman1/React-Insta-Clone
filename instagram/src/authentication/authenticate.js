@@ -2,12 +2,15 @@ import React from 'react';
 import PostsPage from '../Components/PostContainer/PostsPage';
 
 
-const authenticate = PostsPage => 
-    class extends React.Component {
-        render() {
-          return <PostsPage />;
-        }
-      };
+// const withAuthenticate = PostsPage => Login => 
+   
+//             if (localStorage.getItem('userName')) {
+//           return <PostsPage />;
+//         }
+//         return <Login />
+//     }
+// }
+//       };
 
 
-export default authenticate;
+// export default withAuthenticate;
